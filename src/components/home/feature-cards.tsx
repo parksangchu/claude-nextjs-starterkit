@@ -35,7 +35,7 @@ export function FeatureCards() {
         {features.map((feature) => (
           <Card key={feature.title}>
             <CardHeader>
-              <div className="text-4xl mb-2">{feature.icon}</div>
+              <div className="text-4xl mb-2" aria-hidden="true">{feature.icon}</div>
               <CardTitle>{feature.title}</CardTitle>
             </CardHeader>
             <CardContent>

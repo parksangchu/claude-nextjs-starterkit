@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { ContactForm } from "@/components/forms/contact-form"
 import {
   Card,
@@ -7,7 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "폼 예제 - Next.js Starter Kit",
   description: "Zod + react-hook-form + shadcn/ui Form 컴포넌트 예제",
 }

@@ -3,8 +3,11 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="container mx-auto px-4 py-24 text-center">
-      <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+    <section
+      className="container mx-auto px-4 py-24 text-center"
+      aria-labelledby="hero-heading"
+    >
+      <h1 id="hero-heading" className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
         Next.js 15{" "}
         <span className="bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
           스타터킷
