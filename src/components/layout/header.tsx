@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Separator } from "@/components/ui/separator"
+import { NavLink } from "@/components/layout/nav-link"
 
 export function Header() {
   return (
@@ -11,18 +12,8 @@ export function Header() {
             Next.js Starter
           </Link>
           <nav className="flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              홈
-            </Link>
-            <Link
-              href="/form-example"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              폼 예제
-            </Link>
+            <NavLink href="/">홈</NavLink>
+            <NavLink href="/form-example">폼 예제</NavLink>
             <ThemeToggle />
           </nav>
         </div>
